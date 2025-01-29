@@ -1,0 +1,125 @@
+project:
+  name: Strawberry Bench
+  id: r3-bench
+  description: Benchmarks on counting Rs in Strawberry
+
+meta:
+  # Global checklist for all tasks
+  checklist:
+    - Answer states there are 3 Rs in strawberry
+
+  # Global repeat / rephrase
+  repeat: 10
+  rephrase: true
+
+tasks:
+  # - id: gpt-4o-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openai/gpt-4o-2024-08-06
+
+  # - id: gpt-4o-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openai/gpt-4o-2024-11-20
+
+  # - id: gpt-4o-mini-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openai/gpt-4o-mini-2024-07-18
+
+  # - id: llama-3.3-70b-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openrouter/meta-llama/llama-3.3-70b-instruct
+
+  # - id: llama-3.1-405b-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openrouter/meta-llama/llama-3.1-405b-instruct
+
+  # - id: deepseek-r1-distill-llama-70b-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openrouter/deepseek/deepseek-r1-distill-llama-70b
+  #     params:
+  #       timeout: 30
+
+  # HEAVY RATE LIMITS
+  # - id: gemini-2.0-flash-thinking-exp-free-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openrouter/google/gemini-2.0-flash-thinking-exp:free
+  #     params:
+  #       timeout: 30
+
+  # - id: gemini-flash-1.5-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openrouter/google/gemini-flash-1.5
+
+  # - id: gemini-2.0-flash-exp-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: gemini/gemini-2.0-flash-exp
+
+  # - id: gemini-2.0-flash-thinking-exp-01-21-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: gemini-v1alpha/gemini-2.0-flash-thinking-exp-01-21
+
+  # - id: deepseek-chat-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openrouter/deepseek/deepseek-chat
+      # params:
+      #   timeout: 30
+
+  # - id: o1-mini-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openai/o1-mini-2024-09-12
+
+  # - id: o1-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openai/o1
+  #     params:
+  #       reasoning_effort: low
+  
+  - id: o1-high-effort-strawberry
+    input:
+      question: "How many Rs are in strawberry?"
+      model: openai/o1-2024-12-17
+      params:
+        reasoning_effort: high
+
+  # - id: deepseek-r1-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openrouter/deepseek/deepseek-r1
+  #     params:
+  #       extra_body:
+  #         include_reasoning: true
+
+  # - id: grok-2-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: xai/grok-2-1212
+  #     params:
+  #       timeout: 30
+
+  # - id: sonnet-3.5-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: anthropic/claude-3-5-sonnet-20241022
+
+  # - id: claude-3-opus-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: anthropic/claude-3-opus-20240229
+
+  # - id: claude-3-5-haiku-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: anthropic/claude-3-5-haiku-20241022

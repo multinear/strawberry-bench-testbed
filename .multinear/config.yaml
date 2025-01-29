@@ -1,0 +1,6 @@
+# use specific configs with `multinear run --config config_name` (s3, brunei, etc)
+
+project:
+  name: Strawberry Bench
+  id: r3-bench
+  description: Benchmarks on counting Rs in Strawberry

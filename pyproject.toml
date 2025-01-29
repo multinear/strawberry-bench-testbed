@@ -1,0 +1,15 @@
+[project]
+name = "demo-straberry"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=0.6.0",
+    "jupyter>=1.1.1",
+    "litellm>=1.59.8",
+    "openai>=1.60.1",
+    "python-dotenv>=1.0.1",
+    "rich>=13.9.4",
+    "tenacity>=9.0.0",
+]
