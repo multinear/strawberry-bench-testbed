@@ -1,4 +1,4 @@
-TBD
+Results: [text](https://multinear.github.io/strawberry-bench/)
 
 .env:
 OPENAI_API_KEY=
