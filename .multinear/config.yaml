@@ -1,4 +1,4 @@
-# use specific configs with `multinear run --config config_name` (s3, brunei, etc)
+# use specific configs with `multinear run --config config_name` (s3, countries, etc)
 
 project:
   name: Strawberry Bench
