@@ -10,7 +10,7 @@ meta:
 
   # Global repeat / rephrase
   repeat: 10
-  rephrase: true
+  # rephrase: true
 
 tasks:
   # - id: gpt-4o-strawberry
@@ -80,6 +80,20 @@ tasks:
   #     question: "How many Rs are in strawberry?"
   #     model: openai/o1-mini-2024-09-12
 
+  - id: o3-mini-strawberry
+    input:
+      question: "How many Rs are in strawberry?"
+      model: openai/o3-mini-2025-01-31
+      params:
+        reasoning_effort: low
+
+  # - id: o3-mini-high-effort-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openai/o3-mini-2025-01-31
+  #     params:
+  #       reasoning_effort: high
+
   # - id: o1-strawberry
   #   input:
   #     question: "How many Rs are in strawberry?"
@@ -124,7 +138,7 @@ tasks:
   #     question: "How many Rs are in strawberry?"
   #     model: anthropic/claude-3-5-haiku-20241022
 
-  - id: mistral-large-2411-strawberry
-    input:
-      question: "How many Rs are in strawberry?"
-      model: openrouter/mistralai/mistral-large-2411
+  # - id: mistral-large-2411-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openrouter/mistralai/mistral-large-2411
