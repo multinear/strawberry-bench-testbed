@@ -87,12 +87,12 @@ tasks:
   #     params:
   #       reasoning_effort: low
   
-  - id: o1-high-effort-strawberry
-    input:
-      question: "How many Rs are in strawberry?"
-      model: openai/o1-2024-12-17
-      params:
-        reasoning_effort: high
+  # - id: o1-high-effort-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openai/o1-2024-12-17
+  #     params:
+  #       reasoning_effort: high
 
   # - id: deepseek-r1-strawberry
   #   input:
@@ -123,3 +123,8 @@ tasks:
   #   input:
   #     question: "How many Rs are in strawberry?"
   #     model: anthropic/claude-3-5-haiku-20241022
+
+  - id: mistral-large-2411-strawberry
+    input:
+      question: "How many Rs are in strawberry?"
+      model: openrouter/mistralai/mistral-large-2411
