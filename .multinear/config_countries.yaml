@@ -100,12 +100,12 @@ tasks:
   #     params:
   #       reasoning_effort: low
 
-  - id: o3-mini-high-effort-countries
-    input:
-      question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
-      model: openai/o3-mini-2025-01-31
-      params:
-        reasoning_effort: high
+  # - id: o3-mini-high-effort-countries
+  #   input:
+  #     question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
+  #     model: openai/o3-mini-2025-01-31
+  #     params:
+  #       reasoning_effort: high
 
   # - id: o1-countries
   #   input:
@@ -153,3 +153,8 @@ tasks:
   #   input:
   #     question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
   #     model: openrouter/mistralai/mistral-large-2411
+
+  - id: qwen-max-countries
+    input:
+      question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
+      model: openrouter/qwen/qwen-max
