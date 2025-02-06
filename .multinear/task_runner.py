@@ -23,7 +23,7 @@ def run_task(input):
     """
     model = input["model"]
     start_time = time.time()
-    response = ask(input["question"], model, input.get("params", {}))
+    response = ask(input["question"], model, input.get("params", {}), input.get("extra", {}))
     end_time = time.time()
     response_time = end_time - start_time
 

@@ -49,16 +49,20 @@ load_dotenv()
 #     retry=(retry_if_exception_type(RateLimitError) | retry_if_exception_type(OpenAIError)),
 #     before_sleep=before_sleep_log(logger, log_level=logging.INFO)
 # )
-def ask(question, model, params={}):
+def ask(question, model, params={}, extra={}):
     # try:
     if True:
         #check_rate_limit()  # Check rate limit before making request
         if model.startswith("gemini-v1alpha/"):
             client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"), http_options={'api_version':'v1alpha'})
+            if 'thinking' in model:
+                config = {'thinking_config': {'include_thoughts': True}}
+            else:
+                config = {}
             response = client.models.generate_content(
                 model=model.replace("gemini-v1alpha/", ""),
                 contents=question,
-                config={'thinking_config': {'include_thoughts': True}}
+                config=config
             )
             answer = response.text
             prompt_tokens = response.usage_metadata.prompt_token_count
@@ -80,7 +84,9 @@ def ask(question, model, params={}):
                 reasoning = response.choices[0].message.provider_specific_fields.get('reasoning')
 
         # sleep for 1 second to avoid hitting the rate limit
-        time.sleep(1)
+        delay_seconds = extra.get('delay', 1)
+        console.print(f"Waiting for {delay_seconds} seconds")
+        time.sleep(delay_seconds)
 
         return {
             "answer": answer,

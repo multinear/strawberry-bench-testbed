@@ -143,7 +143,14 @@ tasks:
   #     question: "How many Rs are in strawberry?"
   #     model: openrouter/mistralai/mistral-large-2411
 
-  - id: qwen-max-strawberry
+  # - id: qwen-max-strawberry
+  #   input:
+  #     question: "How many Rs are in strawberry?"
+  #     model: openrouter/qwen/qwen-max
+
+  - id: gemini-2.0-pro-exp-02-05-strawberry
     input:
       question: "How many Rs are in strawberry?"
-      model: openrouter/qwen/qwen-max
+      model: gemini-v1alpha/gemini-2.0-pro-exp-02-05
+      extra:
+        delay: 30 # 2 RPM limit

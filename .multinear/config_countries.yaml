@@ -154,7 +154,14 @@ tasks:
   #     question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
   #     model: openrouter/mistralai/mistral-large-2411
 
-  - id: qwen-max-countries
+  # - id: qwen-max-countries
+  #   input:
+  #     question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
+  #     model: openrouter/qwen/qwen-max
+
+  - id: gemini-2.0-pro-exp-02-05-strawberry
     input:
       question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
-      model: openrouter/qwen/qwen-max
+      model: gemini-v1alpha/gemini-2.0-pro-exp-02-05
+      extra:
+        delay: 30 # 2 RPM limit
