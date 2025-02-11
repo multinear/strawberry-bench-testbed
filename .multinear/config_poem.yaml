@@ -147,14 +147,14 @@ tasks:
   #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
   #     model: openrouter/mistralai/mistral-large-2411
 
-  - id: qwen-max-poem
-    input:
-      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-      model: openrouter/qwen/qwen-max
-
-  # - id: gemini-2.0-pro-exp-02-05-strawberry
+  # - id: qwen-max-poem
   #   input:
   #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: gemini-v1alpha/gemini-2.0-pro-exp-02-05
-  #     extra:
-  #       delay: 30 # 2 RPM limit
+  #     model: openrouter/qwen/qwen-max
+
+  - id: gemini-2.0-pro-exp-02-05-strawberry
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: gemini-v1alpha/gemini-2.0-pro-exp-02-05
+      extra:
+        delay: 30 # 2 RPM limit
