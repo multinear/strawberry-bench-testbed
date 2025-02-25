@@ -19,140 +19,153 @@ meta:
   # rephrase: true
 
 tasks:
-  # - id: gpt-4o-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openai/gpt-4o-2024-08-06
+  - id: gpt-4o-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openai/gpt-4o-2024-08-06
 
-  # - id: gpt-4o-new-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openai/gpt-4o-2024-11-20
+  - id: gpt-4o-new-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openai/gpt-4o-2024-11-20
 
-  # - id: gpt-4o-mini-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openai/gpt-4o-mini-2024-07-18
+  - id: gpt-4o-mini-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openai/gpt-4o-mini-2024-07-18
 
-  # - id: llama-3.3-70b-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openrouter/meta-llama/llama-3.3-70b-instruct
+  - id: llama-3.3-70b-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openrouter/meta-llama/llama-3.3-70b-instruct
 
-  # - id: llama-3.1-405b-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openrouter/meta-llama/llama-3.1-405b-instruct
+  - id: llama-3.1-405b-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openrouter/meta-llama/llama-3.1-405b-instruct
 
-  # - id: deepseek-r1-distill-llama-70b-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openrouter/deepseek/deepseek-r1-distill-llama-70b
-  #     params:
-  #       timeout: 30
+  - id: deepseek-r1-distill-llama-70b-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openrouter/deepseek/deepseek-r1-distill-llama-70b
+      params:
+        timeout: 30
 
   # HEAVY RATE LIMITS
-  # - id: gemini-2.0-flash-thinking-exp-free-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openrouter/google/gemini-2.0-flash-thinking-exp:free
-  #     params:
-  #       timeout: 30
+  - id: gemini-2.0-flash-thinking-exp-free-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openrouter/google/gemini-2.0-flash-thinking-exp:free
+      params:
+        timeout: 30
 
-  # - id: gemini-flash-1.5-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openrouter/google/gemini-flash-1.5
+  - id: gemini-flash-1.5-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openrouter/google/gemini-flash-1.5
 
-  # - id: gemini-2.0-flash-exp-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: gemini/gemini-2.0-flash-exp
+  - id: gemini-2.0-flash-exp-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: gemini/gemini-2.0-flash-exp
 
-  # - id: gemini-2.0-flash-thinking-exp-01-21-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: gemini-v1alpha/gemini-2.0-flash-thinking-exp-01-21
+  - id: gemini-2.0-flash-thinking-exp-01-21-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: gemini-v1alpha/gemini-2.0-flash-thinking-exp-01-21
 
-  # - id: deepseek-chat-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openrouter/deepseek/deepseek-chat
-      # params:
-      #   timeout: 30
+  - id: deepseek-chat-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openrouter/deepseek/deepseek-chat
+      params:
+        timeout: 30
 
-  # - id: o1-mini-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openai/o1-mini-2024-09-12
+  - id: o1-mini-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openai/o1-mini-2024-09-12
 
-  # - id: o3-mini-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openai/o3-mini-2025-01-31
-  #     params:
-  #       reasoning_effort: low
+  - id: o3-mini-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openai/o3-mini-2025-01-31
+      params:
+        reasoning_effort: low
 
-  # - id: o3-mini-high-effort-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openai/o3-mini-2025-01-31
-  #     params:
-  #       reasoning_effort: high
+  - id: o3-mini-high-effort-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openai/o3-mini-2025-01-31
+      params:
+        reasoning_effort: high
 
-  # - id: o1-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openai/o1
-  #     params:
-  #       reasoning_effort: low
+  - id: o1-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openai/o1
+      params:
+        reasoning_effort: low
   
-  # - id: o1-high-effort-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openai/o1-2024-12-17
-  #     params:
-  #       reasoning_effort: high
+  - id: o1-high-effort-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openai/o1-2024-12-17
+      params:
+        reasoning_effort: high
 
-  # - id: deepseek-r1-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openrouter/deepseek/deepseek-r1
-  #     params:
-  #       extra_body:
-  #         include_reasoning: true
+  - id: deepseek-r1-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openrouter/deepseek/deepseek-r1
+      params:
+        extra_body:
+          include_reasoning: true
 
-  # - id: grok-2-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: xai/grok-2-1212
+  - id: grok-2-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: xai/grok-2-1212
 
-  # - id: sonnet-3.5-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: anthropic/claude-3-5-sonnet-20241022
+  - id: sonnet-3.7-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: anthropic/claude-3-7-sonnet-20250219
 
-  # - id: claude-3-opus-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: anthropic/claude-3-opus-20240229
+  - id: sonnet-3.7-thinking-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: anthropic/claude-3-7-sonnet-20250219
+      params:
+        thinking: {type: enabled, budget_tokens: 4000}
+        max_tokens: 8000
 
-  # - id: claude-3-5-haiku-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: anthropic/claude-3-5-haiku-20241022
+  - id: sonnet-3.5-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: anthropic/claude-3-5-sonnet-20241022
 
-  # - id: mistral-large-2411-strawberry
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openrouter/mistralai/mistral-large-2411
+  - id: claude-3-opus-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: anthropic/claude-3-opus-20240229
 
-  # - id: qwen-max-poem
-  #   input:
-  #     question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
-  #     model: openrouter/qwen/qwen-max
+  - id: claude-3-5-haiku-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: anthropic/claude-3-5-haiku-20241022
 
-  - id: gemini-2.0-pro-exp-02-05-strawberry
+  - id: mistral-large-2411-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openrouter/mistralai/mistral-large-2411
+
+  - id: qwen-max-poem
+    input:
+      question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
+      model: openrouter/qwen/qwen-max
+
+  - id: gemini-2.0-pro-exp-02-05-poem
     input:
       question: Compose a poem - a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!
       model: gemini-v1alpha/gemini-2.0-pro-exp-02-05
