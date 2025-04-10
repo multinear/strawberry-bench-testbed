@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "anthropic>=0.47.1",
     "google-genai>=0.6.0",
     "jupyter>=1.1.1",
     "litellm>=1.59.8",

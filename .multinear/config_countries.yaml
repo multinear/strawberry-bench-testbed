@@ -178,3 +178,20 @@ tasks:
       model: gemini-v1alpha/gemini-2.0-pro-exp-02-05
       extra:
         delay: 30 # 2 RPM limit
+
+  - id: gemini-2.5-pro-exp-03-25-countries
+    input:
+      question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
+      model: gemini-v1alpha/gemini-2.5-pro-exp-03-25
+      extra:
+        delay: 3
+
+  - id: gpt-4.5-countries
+    input:
+      question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
+      model: openai/gpt-4.5-preview
+
+  - id: grok-3-countries
+    input:
+      question: Write a list of all country names starting with the letter B, which don't have a letter E in their name.
+      model: openrouter/x-ai/grok-3-beta
